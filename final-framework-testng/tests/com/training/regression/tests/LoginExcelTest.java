@@ -15,14 +15,14 @@ import com.training.bean.LoginBean;
 import com.training.dao.ELearningDAO;
 import com.training.dataproviders.LoginDataProviders;
 import com.training.generics.ScreenShot;
-import com.training.pom.LoginPOM;
+import com.training.pom.AdminLoginPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
 public class LoginExcelTest {
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginPOM loginPOM;
+	private AdminLoginPOM loginPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
 
@@ -36,7 +36,7 @@ public class LoginExcelTest {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginPOM(driver);
+		loginPOM = new AdminLoginPOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
 		// open the browser

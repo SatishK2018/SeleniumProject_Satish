@@ -4,7 +4,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 
 /**
@@ -28,9 +30,12 @@ public class DriverFactory {
 			driver = new FirefoxDriver();
 			
 		}else if(driverName.equals("IE")){
-			// TODO 
-		}else if(driverName.equals(DriverNames.PHANTOM)){
-			// TODO 
+			System.setProperty(Driver.IE, Driver.IE_PATH);
+			driver = new InternetExplorerDriver();
+			
+		}else if(driverName.equals(DriverNames.EDGE)){
+			System.setProperty(Driver.EDGE, Driver.EDGE_PATH);
+			driver = new EdgeDriver(); 
 		}
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

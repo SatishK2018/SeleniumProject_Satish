@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 /**
  * 
@@ -49,11 +50,9 @@ public class GenericMethods {
 		}	
 		System.out.println("Sorry Element not found, so not returned...");
 		return null;
-
-
 	}
 	
-	
+		
 	// shall give if it has multiple entries as a list in DOM 
 	
 	public List<WebElement> getElementsAsList(String locator, String type){

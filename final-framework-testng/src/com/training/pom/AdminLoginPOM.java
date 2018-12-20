@@ -5,22 +5,28 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPOM {
+public class AdminLoginPOM {
 	private WebDriver driver; 
 	
-	public LoginPOM(WebDriver driver) {
+	public AdminLoginPOM(WebDriver driver) {
 		this.driver = driver; 
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id="login")
+	@FindBy(id="cyclosUsername")
 	private WebElement userName; 
 	
-	@FindBy(id="password")
+	@FindBy(id="cyclosPassword")
 	private WebElement password;
 	
-	@FindBy(id="formLogin_submitAuth")
+	@FindBy(xpath="//INPUT[@type='submit']")
 	private WebElement loginBtn; 
+	
+	@FindBy(id="loginDataBar")
+	private WebElement getLoggedUser; 
+	
+	@FindBy(xpath="//SPAN[@class='menuText'][text()='Logout']")
+	private WebElement logoutLink;
 	
 	public void sendUserName(String userName) {
 		this.userName.clear();
@@ -35,4 +41,14 @@ public class LoginPOM {
 	public void clickLoginBtn() {
 		this.loginBtn.click(); 
 	}
+	
+	public String getLoggedUser() {
+		return this.getLoggedUser.getText();
+	}
+	
+	public void clickLogoutLnk() {
+		this.logoutLink.click();
+	}
+	
+	
 }
