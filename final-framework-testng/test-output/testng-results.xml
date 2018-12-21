@@ -1,101 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11006" started-at="2018-12-20T04:11:30Z" finished-at="2018-12-20T04:11:41Z">
+  <suite name="Cyclos Project_Sanity Test Suite" duration-ms="97069" started-at="2018-12-21T05:45:01Z" finished-at="2018-12-21T05:46:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11006" started-at="2018-12-20T04:11:30Z" finished-at="2018-12-20T04:11:41Z">
-      <class name="com.training.sanity.tests.TestCaseID_CYTC_016">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@1e88b3c]" name="setUpBeforeClass" is-config="true" duration-ms="20" started-at="2018-12-20T04:11:30Z" finished-at="2018-12-20T04:11:30Z">
+    <test name="Sanity Test" duration-ms="97069" started-at="2018-12-21T05:45:01Z" finished-at="2018-12-21T05:46:38Z">
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_020">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_020@6a4f787b]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-12-21T05:46:14Z" finished-at="2018-12-21T05:46:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@1e88b3c]" name="setUp" is-config="true" duration-ms="10952" started-at="2018-12-20T04:11:30Z" finished-at="2018-12-20T04:11:41Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.training.pom.AdminHomePagePOM.adminLogin(AdminHomePagePOM.java:54)
-at com.training.sanity.tests.TestCaseID_CYTC_016.setUp(TestCaseID_CYTC_016.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_020@6a4f787b]" name="setUp" is-config="true" duration-ms="9387" started-at="2018-12-21T05:46:14Z" finished-at="2018-12-21T05:46:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="testCase_ID_CYTC_016()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@1e88b3c]" name="testCase_ID_CYTC_016" duration-ms="0" started-at="2018-12-20T04:11:41Z" finished-at="2018-12-20T04:11:41Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.training.pom.AdminHomePagePOM.adminLogin(AdminHomePagePOM.java:54)
-at com.training.sanity.tests.TestCaseID_CYTC_016.setUp(TestCaseID_CYTC_016.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_020()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_020@6a4f787b]" name="testCase_ID_CYTC_020" duration-ms="6456" started-at="2018-12-21T05:46:23Z" finished-at="2018-12-21T05:46:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_020 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_020 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_016">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@5e3a8624]" name="setUpBeforeClass" is-config="true" duration-ms="11" started-at="2018-12-21T05:45:01Z" finished-at="2018-12-21T05:45:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@5e3a8624]" name="setUp" is-config="true" duration-ms="9518" started-at="2018-12-21T05:45:01Z" finished-at="2018-12-21T05:45:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_016()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@5e3a8624]" name="testCase_ID_CYTC_016" duration-ms="7709" started-at="2018-12-21T05:45:11Z" finished-at="2018-12-21T05:45:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase_ID_CYTC_016 -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@1e88b3c]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-12-20T04:11:41Z" finished-at="2018-12-20T04:11:41Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@5e3a8624]" name="tearDown" is-config="true" duration-ms="1711" started-at="2018-12-21T05:46:30Z" finished-at="2018-12-21T05:46:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_017@5c3bd550]" name="tearDown" is-config="true" duration-ms="1724" started-at="2018-12-21T05:46:31Z" finished-at="2018-12-21T05:46:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_018@91161c7]" name="tearDown" is-config="true" duration-ms="1734" started-at="2018-12-21T05:46:33Z" finished-at="2018-12-21T05:46:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_019@604ed9f0]" name="tearDown" is-config="true" duration-ms="1708" started-at="2018-12-21T05:46:35Z" finished-at="2018-12-21T05:46:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_020@6a4f787b]" name="tearDown" is-config="true" duration-ms="1743" started-at="2018-12-21T05:46:37Z" finished-at="2018-12-21T05:46:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_016 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_019">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_019@604ed9f0]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-12-21T05:45:58Z" finished-at="2018-12-21T05:45:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_019@604ed9f0]" name="setUp" is-config="true" duration-ms="9675" started-at="2018-12-21T05:45:58Z" finished-at="2018-12-21T05:46:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_019()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_019@604ed9f0]" name="testCase_ID_CYTC_019" duration-ms="6342" started-at="2018-12-21T05:46:08Z" finished-at="2018-12-21T05:46:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_019 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_019 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_017">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_017@5c3bd550]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-12-21T05:45:19Z" finished-at="2018-12-21T05:45:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_017@5c3bd550]" name="setUp" is-config="true" duration-ms="9220" started-at="2018-12-21T05:45:19Z" finished-at="2018-12-21T05:45:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_017()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_017@5c3bd550]" name="testCase_ID_CYTC_017" duration-ms="11372" started-at="2018-12-21T05:45:28Z" finished-at="2018-12-21T05:45:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_017 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_017 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_018">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_018@91161c7]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-12-21T05:45:39Z" finished-at="2018-12-21T05:45:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_018@91161c7]" name="setUp" is-config="true" duration-ms="9400" started-at="2018-12-21T05:45:39Z" finished-at="2018-12-21T05:45:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_018()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_018@91161c7]" name="testCase_ID_CYTC_018" duration-ms="9323" started-at="2018-12-21T05:45:49Z" finished-at="2018-12-21T05:45:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_018 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_018 -->
+    </test> <!-- Sanity Test -->
+  </suite> <!-- Cyclos Project_Sanity Test Suite -->
 </testng-results>

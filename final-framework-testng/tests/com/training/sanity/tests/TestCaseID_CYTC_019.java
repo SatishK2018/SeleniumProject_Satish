@@ -1,9 +1,8 @@
 /*
- * @ Test Case Description : To Verify whether application allows admin to display Accounts details of a particular member based on the search criteria
- * @ Test Case ID: CYTC_016
+ * @ Test Case Description : To verify whether application allows admin to display the loans granted details for member based on the filtered criteria should get displayed
+ * @ Test Case ID: CYTC_019
  * @ Author : Satish Kale
  * */
-
 package com.training.sanity.tests;
 
 import static org.testng.Assert.assertEquals;
@@ -16,20 +15,20 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import com.training.pom.AccountInfoPagePOM;
 import com.training.pom.AdminHomePagePOM;
+import com.training.pom.ViewLoanPagePOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class TestCaseID_CYTC_016 {
+public class TestCaseID_CYTC_019 {
 
 	private WebDriver driver;
 	private String baseUrl;
 	private AdminHomePagePOM adminHomePgPOM;
-	private AccountInfoPagePOM acctInfoPgPOM;
+	private ViewLoanPagePOM viewLoanPgPOM;
 	private static Properties properties;
-	String adminUser, adminPassword;
 	private String actualResult, expectedResult;
+	String adminUser,adminPassword;
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
@@ -42,7 +41,7 @@ public class TestCaseID_CYTC_016 {
 	public void setUp() throws InterruptedException, IOException {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		adminHomePgPOM = new AdminHomePagePOM(driver);
-		acctInfoPgPOM = new AccountInfoPagePOM(driver);
+		viewLoanPgPOM = new ViewLoanPagePOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		adminUser = properties.getProperty("admin_User");
 		adminPassword = properties.getProperty("admin_Password");
@@ -54,7 +53,7 @@ public class TestCaseID_CYTC_016 {
 	}
 	
 	@Test
-	public void testCase_ID_CYTC_016() throws InterruptedException {
+	public void testCase_ID_CYTC_019() throws InterruptedException {
 		
 		//Step 1: Enter valid credentials in Member login textbox
 		adminHomePgPOM.memberLogin("manzoor");
@@ -62,23 +61,18 @@ public class TestCaseID_CYTC_016 {
 		expectedResult = properties.getProperty("MemberLoginPgHeader");
 		assertEquals(actualResult.concat("manzoor"),expectedResult);
 		
-		//Step 2: Click on Submit button of Account information
-		adminHomePgPOM.clickSubmitInformationBtn();
+		//Step 2: Click on Submit button of View loans 
+		adminHomePgPOM.clickSubmitViewLoanBtn();
 		actualResult = adminHomePgPOM.getPageHeader();
-		expectedResult = properties.getProperty("AcctInfoPgHeader");
+		expectedResult = properties.getProperty("ViewLoanPgHeader");
 		assertEquals(actualResult,expectedResult);
 		
-		//Step 3: Click on Payment type list box
-		acctInfoPgPOM.clickPaymentTypeListBox();
+		//Step 3: Click on Closed radio button
+		viewLoanPgPOM.isOpenRadioBtnSelected();
+		viewLoanPgPOM.clickClosedRadioBtn();
 		
-		//Step 4: Select Valid credentials from Payment type list box
-		acctInfoPgPOM.selectPaymentType("Commission payments");
-		actualResult = acctInfoPgPOM.getSelectedPaymentType();
-		expectedResult = properties.getProperty("AcctInfopg_PaymentType");
-		assertEquals(actualResult,expectedResult);
-		
-		//Step 5: Click on Search button
-		acctInfoPgPOM.clickSearchBtn();
+		//Step 4: Click on Open radio button
+		viewLoanPgPOM.clickOpenRadioBtn();
 		
 		adminHomePgPOM.adminLogout();
 		

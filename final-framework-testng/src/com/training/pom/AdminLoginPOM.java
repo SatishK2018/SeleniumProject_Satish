@@ -28,24 +28,29 @@ public class AdminLoginPOM {
 	@FindBy(xpath="//SPAN[@class='menuText'][text()='Logout']")
 	private WebElement logoutLink;
 	
+	//Set User name
 	public void sendUserName(String userName) {
 		this.userName.clear();
 		this.userName.sendKeys(userName);
 	}
 	
+	//Set Password
 	public void sendPassword(String password) {
 		this.password.clear(); 
 		this.password.sendKeys(password); 
 	}
 	
+	//Click Login button
 	public void clickLoginBtn() {
 		this.loginBtn.click(); 
 	}
 	
+	//Verify logged user
 	public String getLoggedUser() {
 		return this.getLoggedUser.getText();
 	}
 	
+	//Click Logout button
 	public void clickLogoutLnk() {
 		this.logoutLink.click();
 	}

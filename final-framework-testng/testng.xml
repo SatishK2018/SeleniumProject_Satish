@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name = "Sample test Suite">
-   <test name = "Sample test">
+<suite name = "Cyclos Project_Sanity Test Suite">
+   <test name = "Sanity Test">
       <classes>
-         <class name = "com.training.sanity.tests.LoginTests" />
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_016" />
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_017" />
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_018" />
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_019" />
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_020" />
       </classes>
    </test>
-</suite>	
+ </suite>	

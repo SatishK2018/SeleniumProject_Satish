@@ -1,6 +1,6 @@
 /*
- * @ Test Case Description : To Verify whether application allows admin to display Accounts details of a particular member based on the search criteria
- * @ Test Case ID: CYTC_016
+ * @ Test Case Description : To Verify whether application allows admin to make the payment for member
+ * @ Test Case ID: CYTC_017
  * @ Author : Satish Kale
  * */
 
@@ -16,20 +16,20 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import com.training.pom.AccountInfoPagePOM;
 import com.training.pom.AdminHomePagePOM;
+import com.training.pom.PaymentSysToMemPagePOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class TestCaseID_CYTC_016 {
+public class TestCaseID_CYTC_017 {
 
 	private WebDriver driver;
 	private String baseUrl;
 	private AdminHomePagePOM adminHomePgPOM;
-	private AccountInfoPagePOM acctInfoPgPOM;
+	private PaymentSysToMemPagePOM paysysToMempgPOM;
 	private static Properties properties;
-	String adminUser, adminPassword;
 	private String actualResult, expectedResult;
+	String adminUser,adminPassword;
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
@@ -42,7 +42,7 @@ public class TestCaseID_CYTC_016 {
 	public void setUp() throws InterruptedException, IOException {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		adminHomePgPOM = new AdminHomePagePOM(driver);
-		acctInfoPgPOM = new AccountInfoPagePOM(driver);
+		paysysToMempgPOM = new PaymentSysToMemPagePOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		adminUser = properties.getProperty("admin_User");
 		adminPassword = properties.getProperty("admin_Password");
@@ -54,7 +54,7 @@ public class TestCaseID_CYTC_016 {
 	}
 	
 	@Test
-	public void testCase_ID_CYTC_016() throws InterruptedException {
+	public void testCase_ID_CYTC_017() throws InterruptedException {
 		
 		//Step 1: Enter valid credentials in Member login textbox
 		adminHomePgPOM.memberLogin("manzoor");
@@ -62,23 +62,42 @@ public class TestCaseID_CYTC_016 {
 		expectedResult = properties.getProperty("MemberLoginPgHeader");
 		assertEquals(actualResult.concat("manzoor"),expectedResult);
 		
-		//Step 2: Click on Submit button of Account information
-		adminHomePgPOM.clickSubmitInformationBtn();
+		//Step 2: Click on Submit button of Payment system to member
+		adminHomePgPOM.clickSubmitPaySysToMemberBtn();
 		actualResult = adminHomePgPOM.getPageHeader();
-		expectedResult = properties.getProperty("AcctInfoPgHeader");
+		expectedResult = properties.getProperty("PaySysMemPgHeader");
 		assertEquals(actualResult,expectedResult);
 		
-		//Step 3: Click on Payment type list box
-		acctInfoPgPOM.clickPaymentTypeListBox();
-		
-		//Step 4: Select Valid credentials from Payment type list box
-		acctInfoPgPOM.selectPaymentType("Commission payments");
-		actualResult = acctInfoPgPOM.getSelectedPaymentType();
-		expectedResult = properties.getProperty("AcctInfopg_PaymentType");
+		//Step 3: Enter valid credentials in Amount text box
+		paysysToMempgPOM.enterAmount("500");
+		actualResult = paysysToMempgPOM.getAmount();
+		expectedResult = properties.getProperty("PaySysMemPg_Amount");
 		assertEquals(actualResult,expectedResult);
 		
-		//Step 5: Click on Search button
-		acctInfoPgPOM.clickSearchBtn();
+		//Step 4: Select valid credentials from Transaction type list box
+		paysysToMempgPOM.clickTransTypeLstBox();
+		paysysToMempgPOM.selectTransType("Debit to member");
+		actualResult = paysysToMempgPOM.getSelecedTransType();
+		expectedResult = properties.getProperty("PaySysMemPg_TransType");
+		assertEquals(actualResult,expectedResult);
+		
+		//Step 5: Enter valid credentials in Description text box
+		paysysToMempgPOM.enterDescription("bonus");
+		String actualResult = paysysToMempgPOM.getEnteredDescription();
+		String expectedResult = properties.getProperty("PaySysMemPg_Description");
+		assertEquals(actualResult,expectedResult);
+		
+		//Step 6: Click on Submit button
+		paysysToMempgPOM.clickSubmitBtn();
+		actualResult = paysysToMempgPOM.getTransConfrmMessg();
+		expectedResult = properties.getProperty("PaySysMemPg_TransConfMesg");
+		assertEquals(actualResult,expectedResult);
+		
+		//Step 7: Click on Submit button
+		paysysToMempgPOM.clickSubmitTransBtn();
+		actualResult = paysysToMempgPOM.getSuccessMessg();
+		expectedResult = properties.getProperty("PaySysMemPg_SuccessMesg");
+		assertEquals(actualResult,expectedResult);
 		
 		adminHomePgPOM.adminLogout();
 		
