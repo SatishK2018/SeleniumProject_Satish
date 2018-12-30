@@ -5,10 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AdminLoginPOM {
+public class LoginPOM {
 	private WebDriver driver; 
 	
-	public AdminLoginPOM(WebDriver driver) {
+	public LoginPOM(WebDriver driver) {
 		this.driver = driver; 
 		PageFactory.initElements(driver, this);
 	}
@@ -34,10 +34,20 @@ public class AdminLoginPOM {
 		this.userName.sendKeys(userName);
 	}
 	
+	//Get entered Login name
+	public String getLoginName() {
+		return this.userName.getAttribute("value");
+	}
+	
 	//Set Password
 	public void sendPassword(String password) {
 		this.password.clear(); 
 		this.password.sendKeys(password); 
+	}
+	
+	//Get entered Login name
+	public String getPassword() {
+		return this.password.getAttribute("value");
 	}
 	
 	//Click Login button

@@ -4,11 +4,16 @@
 <suite name = "Cyclos Project_Sanity Test Suite">
    <test name = "Sanity Test">
       <classes>
-         <class name = "com.training.sanity.tests.TestCaseID_CYTC_016" />
+         <!-- <class name = "com.training.sanity.tests.TestCaseID_CYTC_016" />
          <class name = "com.training.sanity.tests.TestCaseID_CYTC_017" />
          <class name = "com.training.sanity.tests.TestCaseID_CYTC_018" />
          <class name = "com.training.sanity.tests.TestCaseID_CYTC_019" />
-         <class name = "com.training.sanity.tests.TestCaseID_CYTC_020" />
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_020" /> -->
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_046" />
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_047" />
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_048" />
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_049" />
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_050" />
       </classes>
    </test>
  </suite>	

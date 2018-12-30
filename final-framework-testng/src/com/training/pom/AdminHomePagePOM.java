@@ -15,14 +15,14 @@ public class AdminHomePagePOM {
 	private WebDriver driver; 
 	private static Properties properties;
 	private ScreenShot screenShot;
-	private AdminLoginPOM loginPOM;
+	private LoginPOM loginPOM;
 	private JavascriptExecutor jse;
 	//private String fullName;
 	
 	public AdminHomePagePOM(WebDriver driver) throws IOException {
 		this.driver = driver; 
 		PageFactory.initElements(driver, this);
-		loginPOM = new AdminLoginPOM(driver);
+		loginPOM = new LoginPOM(driver);
 		screenShot = new ScreenShot(driver);
 		jse = (JavascriptExecutor)driver;
 		properties = new Properties();

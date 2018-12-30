@@ -2,100 +2,100 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Cyclos Project_Sanity Test Suite" duration-ms="97069" started-at="2018-12-21T05:45:01Z" finished-at="2018-12-21T05:46:38Z">
+  <suite name="Cyclos Project_Sanity Test Suite" duration-ms="145673" started-at="2018-12-30T16:21:23Z" finished-at="2018-12-30T16:23:48Z">
     <groups>
     </groups>
-    <test name="Sanity Test" duration-ms="97069" started-at="2018-12-21T05:45:01Z" finished-at="2018-12-21T05:46:38Z">
-      <class name="com.training.sanity.tests.TestCaseID_CYTC_020">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_020@6a4f787b]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-12-21T05:46:14Z" finished-at="2018-12-21T05:46:14Z">
+    <test name="Sanity Test" duration-ms="145673" started-at="2018-12-30T16:21:23Z" finished-at="2018-12-30T16:23:48Z">
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_048">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_048@91161c7]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-12-30T16:22:20Z" finished-at="2018-12-30T16:22:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_020@6a4f787b]" name="setUp" is-config="true" duration-ms="9387" started-at="2018-12-21T05:46:14Z" finished-at="2018-12-21T05:46:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_048@91161c7]" name="setUp" is-config="true" duration-ms="7764" started-at="2018-12-30T16:22:20Z" finished-at="2018-12-30T16:22:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase_ID_CYTC_020()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_020@6a4f787b]" name="testCase_ID_CYTC_020" duration-ms="6456" started-at="2018-12-21T05:46:23Z" finished-at="2018-12-21T05:46:30Z">
+        <test-method status="PASS" signature="testCase_ID_CYTC_048()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_048@91161c7]" name="testCase_ID_CYTC_048" duration-ms="16342" started-at="2018-12-30T16:22:28Z" finished-at="2018-12-30T16:22:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase_ID_CYTC_020 -->
-      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_020 -->
-      <class name="com.training.sanity.tests.TestCaseID_CYTC_016">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@5e3a8624]" name="setUpBeforeClass" is-config="true" duration-ms="11" started-at="2018-12-21T05:45:01Z" finished-at="2018-12-21T05:45:01Z">
+        </test-method> <!-- testCase_ID_CYTC_048 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_048 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_049">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_049@604ed9f0]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-12-30T16:22:44Z" finished-at="2018-12-30T16:22:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@5e3a8624]" name="setUp" is-config="true" duration-ms="9518" started-at="2018-12-21T05:45:01Z" finished-at="2018-12-21T05:45:11Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_049@604ed9f0]" name="setUp" is-config="true" duration-ms="7684" started-at="2018-12-30T16:22:44Z" finished-at="2018-12-30T16:22:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase_ID_CYTC_016()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@5e3a8624]" name="testCase_ID_CYTC_016" duration-ms="7709" started-at="2018-12-21T05:45:11Z" finished-at="2018-12-21T05:45:19Z">
+        <test-method status="PASS" signature="testCase_ID_CYTC_049()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_049@604ed9f0]" name="testCase_ID_CYTC_049" duration-ms="22534" started-at="2018-12-30T16:22:52Z" finished-at="2018-12-30T16:23:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase_ID_CYTC_016 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@5e3a8624]" name="tearDown" is-config="true" duration-ms="1711" started-at="2018-12-21T05:46:30Z" finished-at="2018-12-21T05:46:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_017@5c3bd550]" name="tearDown" is-config="true" duration-ms="1724" started-at="2018-12-21T05:46:31Z" finished-at="2018-12-21T05:46:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_018@91161c7]" name="tearDown" is-config="true" duration-ms="1734" started-at="2018-12-21T05:46:33Z" finished-at="2018-12-21T05:46:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_019@604ed9f0]" name="tearDown" is-config="true" duration-ms="1708" started-at="2018-12-21T05:46:35Z" finished-at="2018-12-21T05:46:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_020@6a4f787b]" name="tearDown" is-config="true" duration-ms="1743" started-at="2018-12-21T05:46:37Z" finished-at="2018-12-21T05:46:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_016 -->
-      <class name="com.training.sanity.tests.TestCaseID_CYTC_019">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_019@604ed9f0]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-12-21T05:45:58Z" finished-at="2018-12-21T05:45:58Z">
+        </test-method> <!-- testCase_ID_CYTC_049 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_049 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_046">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_046@5e3a8624]" name="setUpBeforeClass" is-config="true" duration-ms="13" started-at="2018-12-30T16:21:23Z" finished-at="2018-12-30T16:21:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_019@604ed9f0]" name="setUp" is-config="true" duration-ms="9675" started-at="2018-12-21T05:45:58Z" finished-at="2018-12-21T05:46:08Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_046@5e3a8624]" name="setUp" is-config="true" duration-ms="9508" started-at="2018-12-30T16:21:23Z" finished-at="2018-12-30T16:21:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase_ID_CYTC_019()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_019@604ed9f0]" name="testCase_ID_CYTC_019" duration-ms="6342" started-at="2018-12-21T05:46:08Z" finished-at="2018-12-21T05:46:14Z">
+        <test-method status="PASS" signature="testCase_ID_CYTC_046()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_046@5e3a8624]" name="testCase_ID_CYTC_046" duration-ms="21764" started-at="2018-12-30T16:21:32Z" finished-at="2018-12-30T16:21:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase_ID_CYTC_019 -->
-      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_019 -->
-      <class name="com.training.sanity.tests.TestCaseID_CYTC_017">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_017@5c3bd550]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-12-21T05:45:19Z" finished-at="2018-12-21T05:45:19Z">
+        </test-method> <!-- testCase_ID_CYTC_046 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_046@5e3a8624]" name="tearDown" is-config="true" duration-ms="1730" started-at="2018-12-30T16:23:40Z" finished-at="2018-12-30T16:23:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_047@5c3bd550]" name="tearDown" is-config="true" duration-ms="1709" started-at="2018-12-30T16:23:41Z" finished-at="2018-12-30T16:23:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_048@91161c7]" name="tearDown" is-config="true" duration-ms="1704" started-at="2018-12-30T16:23:43Z" finished-at="2018-12-30T16:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_049@604ed9f0]" name="tearDown" is-config="true" duration-ms="1716" started-at="2018-12-30T16:23:45Z" finished-at="2018-12-30T16:23:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_050@6a4f787b]" name="tearDown" is-config="true" duration-ms="1758" started-at="2018-12-30T16:23:47Z" finished-at="2018-12-30T16:23:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_046 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_047">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_047@5c3bd550]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-12-30T16:21:54Z" finished-at="2018-12-30T16:21:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_017@5c3bd550]" name="setUp" is-config="true" duration-ms="9220" started-at="2018-12-21T05:45:19Z" finished-at="2018-12-21T05:45:28Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_047@5c3bd550]" name="setUp" is-config="true" duration-ms="7885" started-at="2018-12-30T16:21:54Z" finished-at="2018-12-30T16:22:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase_ID_CYTC_017()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_017@5c3bd550]" name="testCase_ID_CYTC_017" duration-ms="11372" started-at="2018-12-21T05:45:28Z" finished-at="2018-12-21T05:45:39Z">
+        <test-method status="PASS" signature="testCase_ID_CYTC_047()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_047@5c3bd550]" name="testCase_ID_CYTC_047" duration-ms="18230" started-at="2018-12-30T16:22:02Z" finished-at="2018-12-30T16:22:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase_ID_CYTC_017 -->
-      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_017 -->
-      <class name="com.training.sanity.tests.TestCaseID_CYTC_018">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_018@91161c7]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-12-21T05:45:39Z" finished-at="2018-12-21T05:45:39Z">
+        </test-method> <!-- testCase_ID_CYTC_047 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_047 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_050">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_050@6a4f787b]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-12-30T16:23:14Z" finished-at="2018-12-30T16:23:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_018@91161c7]" name="setUp" is-config="true" duration-ms="9400" started-at="2018-12-21T05:45:39Z" finished-at="2018-12-21T05:45:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_050@6a4f787b]" name="setUp" is-config="true" duration-ms="7760" started-at="2018-12-30T16:23:14Z" finished-at="2018-12-30T16:23:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase_ID_CYTC_018()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_018@91161c7]" name="testCase_ID_CYTC_018" duration-ms="9323" started-at="2018-12-21T05:45:49Z" finished-at="2018-12-21T05:45:58Z">
+        <test-method status="PASS" signature="testCase_ID_CYTC_050()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_050@6a4f787b]" name="testCase_ID_CYTC_050" duration-ms="17543" started-at="2018-12-30T16:23:22Z" finished-at="2018-12-30T16:23:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase_ID_CYTC_018 -->
-      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_018 -->
+        </test-method> <!-- testCase_ID_CYTC_050 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_050 -->
     </test> <!-- Sanity Test -->
   </suite> <!-- Cyclos Project_Sanity Test Suite -->
 </testng-results>
