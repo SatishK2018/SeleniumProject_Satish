@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Cyclos Project_Sanity Test Suite]">
+  <test thread-count="5" name="Sanity Test(failed)">
+    <classes>
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_047">
+        <methods>
+          <include name="setUpBeforeClass"/>
+          <include name="tearDown"/>
+          <include name="testCase_ID_CYTC_047"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_047 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_049">
+        <methods>
+          <include name="setUpBeforeClass"/>
+          <include name="tearDown"/>
+          <include name="testCase_ID_CYTC_049"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_049 -->
+    </classes>
+  </test> <!-- Sanity Test(failed) -->
+</suite> <!-- Failed suite [Cyclos Project_Sanity Test Suite] -->
