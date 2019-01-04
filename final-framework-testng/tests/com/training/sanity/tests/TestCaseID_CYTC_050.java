@@ -7,58 +7,64 @@
 package com.training.sanity.tests;
 
 import static org.testng.Assert.assertEquals;
-
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import com.training.pom.BaseClass;
 import com.training.pom.ContactsPagePOM;
 import com.training.pom.MemberHomePagePOM;
 import com.training.pom.PaymentSysToMemPagePOM;
-import com.training.utility.DriverFactory;
-import com.training.utility.DriverNames;
 
 public class TestCaseID_CYTC_050 {
 
 	private WebDriver driver;
-	private String baseUrl;
 	private MemberHomePagePOM memberHomePgPOM;
 	private ContactsPagePOM contactPgPOM;
 	private PaymentSysToMemPagePOM paysysToMempgPOM;
 	private static Properties properties;
 	private String actualResult, expectedResult;
 	private String memberUser, memberPassword;
-
+	
+	/*****
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
 	}
+	*****/
 
 	@BeforeMethod
 	public void setUp() throws InterruptedException, IOException {
-		driver = DriverFactory.getDriver(DriverNames.CHROME);
+		this.driver = BaseClass.driver;
+		this.properties = BaseClass.properties;
 		memberHomePgPOM = new MemberHomePagePOM(driver);
 		paysysToMempgPOM = new PaymentSysToMemPagePOM(driver);
 		contactPgPOM = new ContactsPagePOM(driver);
-		baseUrl = properties.getProperty("baseURL");
 		memberUser = properties.getProperty("member_User1");
 		memberPassword = properties.getProperty("member_Password1");
+		
+		/*****
+		driver = DriverFactory.getDriver(DriverNames.CHROME);
+		baseUrl = properties.getProperty("baseURL");
 		// open the browser
 		driver.get(baseUrl);
 		Thread.sleep(1000);
 		// Pre-Condition
 		memberHomePgPOM.memberLogin(memberUser, memberPassword);
+		*****/
 	}
 
 	@Test
 	public void testCase_ID_CYTC_050() throws InterruptedException {
-
+		
+		// Login to the application
+		memberHomePgPOM.memberLogin(memberUser, memberPassword);
+		
 		// Step 1: Click on Personal Tab
 		memberHomePgPOM.clickPersonalTab();
 		// Verify that the 'Profile' sub menu is displayed
@@ -133,13 +139,6 @@ public class TestCaseID_CYTC_050 {
 		//Logout
 		memberHomePgPOM.clickLogout();
 		memberHomePgPOM.clickOKInPopup();
-	
 	}
-
-	@AfterTest public void tearDown() throws Exception { 
-	  Thread.sleep(1000);
-	  driver.quit(); 
-	 }
-	 
-
+	
 }

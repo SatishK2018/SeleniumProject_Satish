@@ -1,8 +1,6 @@
 package com.training.pom;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,17 +11,13 @@ import com.training.generics.ScreenShot;
 public class PaymentSysToMemPagePOM {
 	
 	private WebDriver driver; 
-	private static Properties properties;
 	private ScreenShot screenShot;
 	private Select transType; 
 	
 	public PaymentSysToMemPagePOM(WebDriver driver) throws IOException {
-		this.driver = driver; 
+		this.driver = BaseClass.driver;
 		PageFactory.initElements(driver, this);
 		screenShot = new ScreenShot(driver);
-		properties = new Properties();
-		FileInputStream inStream = new FileInputStream("./resources/others.properties");
-		properties.load(inStream);
 	}
 	
 	@FindBy(name="amount")
@@ -49,10 +43,9 @@ public class PaymentSysToMemPagePOM {
 	
 	
 	//Enter amount in Text box
-	public void enterAmount(String amountValue) throws InterruptedException {
+	public void enterAmount(String amountValue) {
 		this.amount.clear();
 		this.amount.sendKeys(amountValue);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
@@ -64,31 +57,27 @@ public class PaymentSysToMemPagePOM {
 	}
 	
 	//Select Transaction Type
-	public void selectTransType(String transTypeValue) throws InterruptedException {
+	public void selectTransType(String transTypeValue) {
 		transType = new Select(this.transTypeLstBox);
 		transType.selectByVisibleText(transTypeValue);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	//Enter description in Text box
-	public void enterDescription(String description) throws InterruptedException {
+	public void enterDescription(String description) {
 		this.descriptionTxtBox.sendKeys(description);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	//Click Submit button for Transaction confirmation
-	public void clickSubmitBtn() throws InterruptedException {
+	public void clickSubmitBtn() {
 		this.submitBtn.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	//Click Submit button for transaction submission
-	public void clickSubmitTransBtn() throws InterruptedException {
+	public void clickSubmitTransBtn() {
 		this.submitTransBtn.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	

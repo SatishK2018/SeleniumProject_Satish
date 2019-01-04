@@ -1,8 +1,6 @@
 package com.training.pom;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -15,19 +13,15 @@ import com.training.generics.ScreenShot;
 public class AccountInfoPagePOM {
 	
 	private WebDriver driver; 
-	private static Properties properties;
 	private ScreenShot screenShot;
 	private Select payment_Type_ListBox;
 	private WebElement dynamicXpath;
 	private String xpath;
 		
 	public AccountInfoPagePOM(WebDriver driver) throws IOException {
-		this.driver = driver; 
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		screenShot = new ScreenShot(driver);
-		properties = new Properties();
-		FileInputStream inStream = new FileInputStream("./resources/others.properties");
-		properties.load(inStream);
+		screenShot = new ScreenShot(driver);	
 	}
 	
 	@FindBy(name= "query(paymentFilter)")
@@ -83,10 +77,9 @@ public class AccountInfoPagePOM {
 	
 	
 	//Select Payment Type from the List box
-	public void selectPaymentType(String paymentType) throws InterruptedException{
+	public void selectPaymentType(String paymentType) {
 		payment_Type_ListBox = new Select(paymentTypeListBx);
 		payment_Type_ListBox.selectByVisibleText(paymentType);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
@@ -100,38 +93,33 @@ public class AccountInfoPagePOM {
 	}*/
 	
 	//Click in the Payment Type list box to display all values in the list box
-	public void clickPaymentTypeListBox() throws InterruptedException {
+	public void clickPaymentTypeListBox() {
 		this.paymentTypeListBx.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 		this.paymentTypeListBx.click();
 	}
 	
 	//Click Search button on Transaction Details page
-	public void clickSearchBtn() throws InterruptedException {
+	public void clickSearchBtn() {
 		this.search.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	//Click View icon button to display particular transaction
-	public void clickViewImgBtn() throws InterruptedException {
+	public void clickViewImgBtn() {
 		this.viewImgBtn.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	// Enter Member Login name
-	public void enterMemberLogin(String memberLogin) throws InterruptedException {
+	public void enterMemberLogin(String memberLogin) {
 		this.memberLogin.sendKeys(memberLogin);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	// Press enter key after entering member login
-	public void pressEnterKey() throws InterruptedException {
+	public void pressEnterKey() {
 		this.memberLogin.sendKeys(Keys.ENTER);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
@@ -143,7 +131,6 @@ public class AccountInfoPagePOM {
 	//Click Back button on Transaction Details page
 	public void clickBackBtn_TransDetailsPg() throws InterruptedException {
 		this.backBtn.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();	
 	}
 	
@@ -175,20 +162,18 @@ public class AccountInfoPagePOM {
 	}
 	
 	// Select From Date from Date Picker
-	public void selectFromDate() throws InterruptedException {
+	public void selectFromDate() {
 		this.fromDatePicker.click();
 		this.movePreviousMonth.click();
 		this.selectFromDate.click();	
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	// Select To Date from Date Picker
-	public void selectToDate() throws InterruptedException {
+	public void selectToDate() {
 		//this.toDatePicker.click();
 		//this.selectToDate.click();
 		this.toDateTxtBx.sendKeys("30/12/2018");
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	

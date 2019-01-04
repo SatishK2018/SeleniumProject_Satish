@@ -1,8 +1,6 @@
 package com.training.pom;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,20 +11,14 @@ import com.training.generics.ScreenShot;
 public class GrantLoanPagePOM {
 	
 	private WebDriver driver; 
-	private static Properties properties;
 	private ScreenShot screenShot;
-	private AdminHomePagePOM adminHomePgPOM;
 	private Alert alertDialog;
 	private String alertMessg;
 	
 	public GrantLoanPagePOM(WebDriver driver) throws IOException {
-		this.driver = driver; 
+		this.driver = BaseClass.driver;
 		PageFactory.initElements(driver, this);
 		screenShot = new ScreenShot(driver);
-		properties = new Properties();
-		adminHomePgPOM = new AdminHomePagePOM(driver);
-		FileInputStream inStream = new FileInputStream("./resources/others.properties");
-		properties.load(inStream);
 	}
 	
 	@FindBy(id="amount")
@@ -48,39 +40,34 @@ public class GrantLoanPagePOM {
 	private WebElement successMsg;
 	
 	//Enter amount in Text box
-	public void enterAmount(String amountValue) throws InterruptedException {
+	public void enterAmount(String amountValue) {
 		this.amount.clear();
 		this.amount.sendKeys(amountValue);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	//Enter description in Text box
-	public void enterDescription(String description) throws InterruptedException {
+	public void enterDescription(String description) {
 		this.descriptionTxtBox.sendKeys(description);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	//Click Submit button
-	public void clickSubmitBtn() throws InterruptedException {
+	public void clickSubmitBtn() {
 		this.submitBtn.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	//Click Submit Loan button
-	public void clickSubmitLoanBtn() throws InterruptedException {
+	public void clickSubmitLoanBtn() {
 		this.submitLoanConfrnBtn.click();
 		screenShot.captureScreenShot();
 	}
 	
 	//Click OK in popup
-	public void clickOkInAlert() throws InterruptedException {
+	public void clickOkInAlert() {
 		alertDialog = driver.switchTo().alert();
-		alertMessg = alertDialog.getText();
 		alertDialog.accept();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
@@ -101,6 +88,7 @@ public class GrantLoanPagePOM {
 	
 	//Get alert text in the pop up
 	public String getAlertMessg() {
+		alertMessg = driver.switchTo().alert().getText();
 		return alertMessg;		
 	}
 		

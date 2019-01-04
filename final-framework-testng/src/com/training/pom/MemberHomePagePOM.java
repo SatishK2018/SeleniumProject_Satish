@@ -1,8 +1,7 @@
 package com.training.pom;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +11,6 @@ import com.training.generics.ScreenShot;
 
 public class MemberHomePagePOM {
 	private WebDriver driver;
-	private static Properties properties;
 	private ScreenShot screenShot;
 	private LoginPOM loginPOM;
 	private Alert alert;
@@ -21,11 +19,8 @@ public class MemberHomePagePOM {
 	public MemberHomePagePOM(WebDriver driver) throws IOException {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		loginPOM = new LoginPOM(driver);
 		screenShot = new ScreenShot(driver);
-		properties = new Properties();
-		FileInputStream inStream = new FileInputStream("./resources/others.properties");
-		properties.load(inStream);
+		loginPOM = new LoginPOM(driver);
 	}
 
 	@FindBy(xpath = "//SPAN[@class='menuText'][text()='Account']")
@@ -76,16 +71,15 @@ public class MemberHomePagePOM {
 	}
 
 	// Login using Member credentials
-	public void memberLogin(String userName, String password) throws InterruptedException {
+	public void memberLogin(String userName, String password) {
 		loginPOM.sendUserName(userName);
 		loginPOM.sendPassword(password);
 		loginPOM.clickLoginBtn();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
-
+	
 	// Click Logout link
-	public void clickLogout() throws InterruptedException {
+	public void clickLogout() {
 		loginPOM.clickLogoutLnk();
 	}
 
@@ -96,24 +90,21 @@ public class MemberHomePagePOM {
 	}
 
 	// Click OK in the pop up
-	public void clickOKInPopup() throws InterruptedException {
+	public void clickOKInPopup() {
 		alert = driver.switchTo().alert();
 		alert.accept();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
 	// Click on Account tab
-	public void clickAccountTab() throws InterruptedException {
+	public void clickAccountTab() {
 		this.accountMenu.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
 	// Click on Account tab
-	public void clickPersonalTab() throws InterruptedException {
+	public void clickPersonalTab() {
 		this.personalMenu.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
@@ -146,37 +137,32 @@ public class MemberHomePagePOM {
 	}
 
 	// Click on Member Payment sub menu
-	public void clickMemberPaymentMenu() throws InterruptedException {
+	public void clickMemberPaymentMenu() {
 		this.accountSubMenu_MemberPayment.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	// Click on Account Information sub menu
-	public void clickAccountInformationMenu() throws InterruptedException {
+	public void clickAccountInformationMenu() {
 		this.accountSubMenu_AccountInformation.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
 	// Click on Messages sub menu
-	public void clickMessagesLink() throws InterruptedException {
+	public void clickMessagesLink() {
 		this.personalSubMenu_Messages.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	// Click on Contacts sub menu
-	public void clickContactsLink() throws InterruptedException {
+	public void clickContactsLink() {
 		this.personalSubMenu_Contacts.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
 	// Click on Scheduled payments sub menu
-	public void clickScheduledPaymentsMenu() throws InterruptedException {
+	public void clickScheduledPaymentsMenu() {
 		this.accountSubMenu_ScheduledPayments.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
@@ -186,9 +172,8 @@ public class MemberHomePagePOM {
 	}
 	
 	// Click Advanced button
-	public void clickAdvancedBtn() throws InterruptedException {
+	public void clickAdvancedBtn() {
 		this.advancedBtn.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 

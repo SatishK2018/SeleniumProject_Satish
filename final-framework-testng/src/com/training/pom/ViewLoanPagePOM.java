@@ -1,9 +1,6 @@
 package com.training.pom;
 
-
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,17 +10,13 @@ import com.training.generics.ScreenShot;
 public class ViewLoanPagePOM {
 	
 	private WebDriver driver; 
-	private static Properties properties;
 	private ScreenShot screenShot;
 	String radioBtn;
 	
 	public ViewLoanPagePOM(WebDriver driver) throws IOException {
-		this.driver = driver; 
+		this.driver = BaseClass.driver;
 		PageFactory.initElements(driver, this);
 		screenShot = new ScreenShot(driver);
-		properties = new Properties();
-		FileInputStream inStream = new FileInputStream("./resources/others.properties");
-		properties.load(inStream);
 	}
 	
 	@FindBy(xpath="(//INPUT[@type='radio'])[1]")
@@ -40,16 +33,14 @@ public class ViewLoanPagePOM {
 	}
 	
 	//Click Closed radio button
-	public void clickClosedRadioBtn() throws InterruptedException {
+	public void clickClosedRadioBtn() {
 		this.radioBtn_CLOSED.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();		
 	}
 	
 	//Click Open radio button
-	public void clickOpenRadioBtn() throws InterruptedException {
+	public void clickOpenRadioBtn() {
 		this.radioBtn_OPEN.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();		
 	}
 	

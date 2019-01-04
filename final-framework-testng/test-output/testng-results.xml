@@ -1,101 +1,647 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="6" ignored="0" total="24" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Cyclos Project_Sanity Test Suite" duration-ms="145673" started-at="2018-12-30T16:21:23Z" finished-at="2018-12-30T16:23:48Z">
+  <suite name="Cyclos Project_Sanity Test Suite" duration-ms="246620" started-at="2019-01-04T11:34:49Z" finished-at="2019-01-04T11:38:56Z">
     <groups>
     </groups>
-    <test name="Sanity Test" duration-ms="145673" started-at="2018-12-30T16:21:23Z" finished-at="2018-12-30T16:23:48Z">
-      <class name="com.training.sanity.tests.TestCaseID_CYTC_048">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_048@91161c7]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-12-30T16:22:20Z" finished-at="2018-12-30T16:22:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_048@91161c7]" name="setUp" is-config="true" duration-ms="7764" started-at="2018-12-30T16:22:20Z" finished-at="2018-12-30T16:22:28Z">
+    <test name="Chrome Test" duration-ms="116106" started-at="2019-01-04T11:34:49Z" finished-at="2019-01-04T11:36:46Z">
+      <class name="com.training.sanity.tests.AdminLogout">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.AdminLogout@146ba0ac]" name="setUp" is-config="true" duration-ms="1" started-at="2019-01-04T11:35:38Z" finished-at="2019-01-04T11:35:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase_ID_CYTC_048()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_048@91161c7]" name="testCase_ID_CYTC_048" duration-ms="16342" started-at="2018-12-30T16:22:28Z" finished-at="2018-12-30T16:22:44Z">
+        <test-method status="PASS" signature="adminLogout()[pri:0, instance:com.training.sanity.tests.AdminLogout@146ba0ac]" name="adminLogout" duration-ms="101" started-at="2019-01-04T11:35:38Z" finished-at="2019-01-04T11:35:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogout -->
+      </class> <!-- com.training.sanity.tests.AdminLogout -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_020">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_020@754ba872]" name="setUp" is-config="true" duration-ms="1" started-at="2019-01-04T11:35:33Z" finished-at="2019-01-04T11:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_020()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_020@754ba872]" name="testCase_ID_CYTC_020" duration-ms="5263" started-at="2019-01-04T11:35:33Z" finished-at="2019-01-04T11:35:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_020 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_020 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_048">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_048@464bee09]" name="setUp" is-config="true" duration-ms="3" started-at="2019-01-04T11:36:04Z" finished-at="2019-01-04T11:36:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_048()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_048@464bee09]" name="testCase_ID_CYTC_048" duration-ms="12038" started-at="2019-01-04T11:36:04Z" finished-at="2019-01-04T11:36:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase_ID_CYTC_048 -->
       </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_048 -->
-      <class name="com.training.sanity.tests.TestCaseID_CYTC_049">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_049@604ed9f0]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-12-30T16:22:44Z" finished-at="2018-12-30T16:22:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_049@604ed9f0]" name="setUp" is-config="true" duration-ms="7684" started-at="2018-12-30T16:22:44Z" finished-at="2018-12-30T16:22:52Z">
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_016">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@4667ae56]" name="setUp" is-config="true" duration-ms="10" started-at="2019-01-04T11:35:08Z" finished-at="2019-01-04T11:35:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase_ID_CYTC_049()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_049@604ed9f0]" name="testCase_ID_CYTC_049" duration-ms="22534" started-at="2018-12-30T16:22:52Z" finished-at="2018-12-30T16:23:14Z">
+        <test-method status="FAIL" signature="testCase_ID_CYTC_016()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@4667ae56]" name="testCase_ID_CYTC_016" duration-ms="1318" started-at="2019-01-04T11:35:08Z" finished-at="2019-01-04T11:35:09Z">
+          <exception class="java.lang.IllegalMonitorStateException">
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalMonitorStateException
+at java.lang.Object.wait(Native Method)
+at java.lang.Object.wait(Unknown Source)
+at com.training.sanity.tests.TestCaseID_CYTC_016.testCase_ID_CYTC_016(TestCaseID_CYTC_016.java:66)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_016 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_016 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_049">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_049@f6c48ac]" name="setUp" is-config="true" duration-ms="2" started-at="2019-01-04T11:36:16Z" finished-at="2019-01-04T11:36:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_049()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_049@f6c48ac]" name="testCase_ID_CYTC_049" duration-ms="20136" started-at="2019-01-04T11:36:16Z" finished-at="2019-01-04T11:36:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase_ID_CYTC_049 -->
       </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_049 -->
       <class name="com.training.sanity.tests.TestCaseID_CYTC_046">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_046@5e3a8624]" name="setUpBeforeClass" is-config="true" duration-ms="13" started-at="2018-12-30T16:21:23Z" finished-at="2018-12-30T16:21:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_046@5e3a8624]" name="setUp" is-config="true" duration-ms="9508" started-at="2018-12-30T16:21:23Z" finished-at="2018-12-30T16:21:32Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_046@4dfa3a9d]" name="setUp" is-config="true" duration-ms="8" started-at="2019-01-04T11:35:38Z" finished-at="2019-01-04T11:35:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase_ID_CYTC_046()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_046@5e3a8624]" name="testCase_ID_CYTC_046" duration-ms="21764" started-at="2018-12-30T16:21:32Z" finished-at="2018-12-30T16:21:54Z">
+        <test-method status="PASS" signature="testCase_ID_CYTC_046()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_046@4dfa3a9d]" name="testCase_ID_CYTC_046" duration-ms="15681" started-at="2019-01-04T11:35:38Z" finished-at="2019-01-04T11:35:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase_ID_CYTC_046 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_046@5e3a8624]" name="tearDown" is-config="true" duration-ms="1730" started-at="2018-12-30T16:23:40Z" finished-at="2018-12-30T16:23:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_047@5c3bd550]" name="tearDown" is-config="true" duration-ms="1709" started-at="2018-12-30T16:23:41Z" finished-at="2018-12-30T16:23:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_048@91161c7]" name="tearDown" is-config="true" duration-ms="1704" started-at="2018-12-30T16:23:43Z" finished-at="2018-12-30T16:23:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_049@604ed9f0]" name="tearDown" is-config="true" duration-ms="1716" started-at="2018-12-30T16:23:45Z" finished-at="2018-12-30T16:23:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_050@6a4f787b]" name="tearDown" is-config="true" duration-ms="1758" started-at="2018-12-30T16:23:47Z" finished-at="2018-12-30T16:23:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_046 -->
       <class name="com.training.sanity.tests.TestCaseID_CYTC_047">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_047@5c3bd550]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2018-12-30T16:21:54Z" finished-at="2018-12-30T16:21:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_047@5c3bd550]" name="setUp" is-config="true" duration-ms="7885" started-at="2018-12-30T16:21:54Z" finished-at="2018-12-30T16:22:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_047@6eebc39e]" name="setUp" is-config="true" duration-ms="8" started-at="2019-01-04T11:35:54Z" finished-at="2019-01-04T11:35:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase_ID_CYTC_047()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_047@5c3bd550]" name="testCase_ID_CYTC_047" duration-ms="18230" started-at="2018-12-30T16:22:02Z" finished-at="2018-12-30T16:22:20Z">
+        <test-method status="PASS" signature="testCase_ID_CYTC_047()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_047@6eebc39e]" name="testCase_ID_CYTC_047" duration-ms="10174" started-at="2019-01-04T11:35:54Z" finished-at="2019-01-04T11:36:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase_ID_CYTC_047 -->
       </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_047 -->
-      <class name="com.training.sanity.tests.TestCaseID_CYTC_050">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_050@6a4f787b]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2018-12-30T16:23:14Z" finished-at="2018-12-30T16:23:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_050@6a4f787b]" name="setUp" is-config="true" duration-ms="7760" started-at="2018-12-30T16:23:14Z" finished-at="2018-12-30T16:23:22Z">
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_019">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_019@e25b2fe]" name="setUp" is-config="true" duration-ms="5" started-at="2019-01-04T11:35:28Z" finished-at="2019-01-04T11:35:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase_ID_CYTC_050()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_050@6a4f787b]" name="testCase_ID_CYTC_050" duration-ms="17543" started-at="2018-12-30T16:23:22Z" finished-at="2018-12-30T16:23:40Z">
+        <test-method status="PASS" signature="testCase_ID_CYTC_019()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_019@e25b2fe]" name="testCase_ID_CYTC_019" duration-ms="4923" started-at="2019-01-04T11:35:28Z" finished-at="2019-01-04T11:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_019 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_019 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_017">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_017@77cd7a0]" name="setUp" is-config="true" duration-ms="3" started-at="2019-01-04T11:35:09Z" finished-at="2019-01-04T11:35:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_017()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_017@77cd7a0]" name="testCase_ID_CYTC_017" duration-ms="9308" started-at="2019-01-04T11:35:09Z" finished-at="2019-01-04T11:35:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_017 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_017 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_018">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_018@204f30ec]" name="setUp" is-config="true" duration-ms="3" started-at="2019-01-04T11:35:18Z" finished-at="2019-01-04T11:35:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_018()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_018@204f30ec]" name="testCase_ID_CYTC_018" duration-ms="9793" started-at="2019-01-04T11:35:18Z" finished-at="2019-01-04T11:35:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_018 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_018 -->
+      <class name="com.training.sanity.tests.AdminLogin">
+        <test-method status="PASS" signature="setDriver(java.lang.String)[pri:0, instance:com.training.sanity.tests.AdminLogin@1a968a59]" name="setDriver" is-config="true" duration-ms="4351" started-at="2019-01-04T11:34:49Z" finished-at="2019-01-04T11:34:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.AdminLogin@1a968a59]" name="setUp" is-config="true" duration-ms="2660" started-at="2019-01-04T11:34:54Z" finished-at="2019-01-04T11:34:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="adminLogin()[pri:0, instance:com.training.sanity.tests.AdminLogin@1a968a59]" name="adminLogin" duration-ms="11187" started-at="2019-01-04T11:34:56Z" finished-at="2019-01-04T11:35:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.AdminLogin@1a968a59]" name="tearDown" is-config="true" duration-ms="822" started-at="2019-01-04T11:36:45Z" finished-at="2019-01-04T11:36:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.sanity.tests.AdminLogin -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_050">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_050@13deb50e]" name="setUp" is-config="true" duration-ms="3" started-at="2019-01-04T11:36:36Z" finished-at="2019-01-04T11:36:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_050()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_050@13deb50e]" name="testCase_ID_CYTC_050" duration-ms="8246" started-at="2019-01-04T11:36:36Z" finished-at="2019-01-04T11:36:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase_ID_CYTC_050 -->
       </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_050 -->
-    </test> <!-- Sanity Test -->
+    </test> <!-- Chrome Test -->
+    <test name="Firefox Test" duration-ms="130427" started-at="2019-01-04T11:36:46Z" finished-at="2019-01-04T11:38:56Z">
+      <class name="com.training.sanity.tests.AdminLogout">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.AdminLogout@4b952a2d]" name="setUp" is-config="true" duration-ms="1" started-at="2019-01-04T11:37:17Z" finished-at="2019-01-04T11:37:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="adminLogout()[pri:0, instance:com.training.sanity.tests.AdminLogout@4b952a2d]" name="adminLogout" duration-ms="87" started-at="2019-01-04T11:37:17Z" finished-at="2019-01-04T11:37:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogout -->
+      </class> <!-- com.training.sanity.tests.AdminLogout -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_020">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_020@69ea3742]" name="setUp" is-config="true" duration-ms="2" started-at="2019-01-04T11:37:12Z" finished-at="2019-01-04T11:37:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_020()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_020@69ea3742]" name="testCase_ID_CYTC_020" duration-ms="5012" started-at="2019-01-04T11:37:12Z" finished-at="2019-01-04T11:37:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_020 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_020 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_048">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_048@4bec1f0c]" name="setUp" is-config="true" duration-ms="1" started-at="2019-01-04T11:37:36Z" finished-at="2019-01-04T11:37:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testCase_ID_CYTC_048()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_048@4bec1f0c]" name="testCase_ID_CYTC_048" duration-ms="20038" started-at="2019-01-04T11:37:36Z" finished-at="2019-01-04T11:37:56Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: #cyclosUsername
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-5SL4C2D', ip: '9.102.60.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\SATISHKALE\AppData\Local\Temp\rust_mozprofile.kFRPp3knLwm2, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, moz:headless=false, platform=WINDOWS, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=true, browserVersion=64.0, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=21440, browserName=firefox, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: fd818dc7-5825-487d-9242-e5815da4350e
+*** Element info: {Using=id, value=cyclosUsername}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #cyclosUsername
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-5SL4C2D', ip: '9.102.60.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\SATISHKALE\AppData\Local\Temp\rust_mozprofile.kFRPp3knLwm2, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, moz:headless=false, platform=WINDOWS, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=true, browserVersion=64.0, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=21440, browserName=firefox, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: fd818dc7-5825-487d-9242-e5815da4350e
+*** Element info: {Using=id, value=cyclosUsername}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.clear(Unknown Source)
+at com.training.pom.LoginPOM.sendUserName(LoginPOM.java:33)
+at com.training.pom.MemberHomePagePOM.memberLogin(MemberHomePagePOM.java:75)
+at com.training.sanity.tests.TestCaseID_CYTC_048.testCase_ID_CYTC_048(TestCaseID_CYTC_048.java:61)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_048 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_048 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_049">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_049@29ca901e]" name="setUp" is-config="true" duration-ms="2" started-at="2019-01-04T11:37:56Z" finished-at="2019-01-04T11:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testCase_ID_CYTC_049()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_049@29ca901e]" name="testCase_ID_CYTC_049" duration-ms="20036" started-at="2019-01-04T11:37:56Z" finished-at="2019-01-04T11:38:16Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: #cyclosUsername
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-5SL4C2D', ip: '9.102.60.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\SATISHKALE\AppData\Local\Temp\rust_mozprofile.kFRPp3knLwm2, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, moz:headless=false, platform=WINDOWS, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=true, browserVersion=64.0, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=21440, browserName=firefox, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: fd818dc7-5825-487d-9242-e5815da4350e
+*** Element info: {Using=id, value=cyclosUsername}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #cyclosUsername
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-5SL4C2D', ip: '9.102.60.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\SATISHKALE\AppData\Local\Temp\rust_mozprofile.kFRPp3knLwm2, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, moz:headless=false, platform=WINDOWS, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=true, browserVersion=64.0, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=21440, browserName=firefox, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: fd818dc7-5825-487d-9242-e5815da4350e
+*** Element info: {Using=id, value=cyclosUsername}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.clear(Unknown Source)
+at com.training.pom.LoginPOM.sendUserName(LoginPOM.java:33)
+at com.training.pom.MemberHomePagePOM.memberLogin(MemberHomePagePOM.java:75)
+at com.training.sanity.tests.TestCaseID_CYTC_049.testCase_ID_CYTC_049(TestCaseID_CYTC_049.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_049 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_049 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_016">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@1ed4004b]" name="setUp" is-config="true" duration-ms="1" started-at="2019-01-04T11:36:56Z" finished-at="2019-01-04T11:36:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testCase_ID_CYTC_016()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_016@1ed4004b]" name="testCase_ID_CYTC_016" duration-ms="1318" started-at="2019-01-04T11:36:56Z" finished-at="2019-01-04T11:36:57Z">
+          <exception class="java.lang.IllegalMonitorStateException">
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalMonitorStateException
+at java.lang.Object.wait(Native Method)
+at java.lang.Object.wait(Unknown Source)
+at com.training.sanity.tests.TestCaseID_CYTC_016.testCase_ID_CYTC_016(TestCaseID_CYTC_016.java:66)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_016 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_016 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_046">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_046@3159c4b8]" name="setUp" is-config="true" duration-ms="7" started-at="2019-01-04T11:37:17Z" finished-at="2019-01-04T11:37:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_046()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_046@3159c4b8]" name="testCase_ID_CYTC_046" duration-ms="10828" started-at="2019-01-04T11:37:17Z" finished-at="2019-01-04T11:37:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_046 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_046 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_047">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_047@73846619]" name="setUp" is-config="true" duration-ms="0" started-at="2019-01-04T11:37:28Z" finished-at="2019-01-04T11:37:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testCase_ID_CYTC_047()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_047@73846619]" name="testCase_ID_CYTC_047" duration-ms="7642" started-at="2019-01-04T11:37:28Z" finished-at="2019-01-04T11:37:36Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Scheduled payment details] but found [Bank Application  
+You have already exceeded the maximum amount for transaction Trade transfer at 25/03/2019.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Scheduled payment details] but found [Bank Application  
+You have already exceeded the maximum amount for transaction Trade transfer at 25/03/2019.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.training.sanity.tests.TestCaseID_CYTC_047.testCase_ID_CYTC_047(TestCaseID_CYTC_047.java:124)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_047 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_047 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_019">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_019@5702b3b1]" name="setUp" is-config="true" duration-ms="0" started-at="2019-01-04T11:37:08Z" finished-at="2019-01-04T11:37:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_019()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_019@5702b3b1]" name="testCase_ID_CYTC_019" duration-ms="3955" started-at="2019-01-04T11:37:08Z" finished-at="2019-01-04T11:37:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_019 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_019 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_017">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_017@ff5b51f]" name="setUp" is-config="true" duration-ms="2" started-at="2019-01-04T11:36:57Z" finished-at="2019-01-04T11:36:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_017()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_017@ff5b51f]" name="testCase_ID_CYTC_017" duration-ms="6430" started-at="2019-01-04T11:36:57Z" finished-at="2019-01-04T11:37:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_017 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_017 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_018">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_018@25bbe1b6]" name="setUp" is-config="true" duration-ms="1" started-at="2019-01-04T11:37:03Z" finished-at="2019-01-04T11:37:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCase_ID_CYTC_018()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_018@25bbe1b6]" name="testCase_ID_CYTC_018" duration-ms="4980" started-at="2019-01-04T11:37:03Z" finished-at="2019-01-04T11:37:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_018 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_018 -->
+      <class name="com.training.sanity.tests.AdminLogin">
+        <test-method status="PASS" signature="setDriver(java.lang.String)[pri:0, instance:com.training.sanity.tests.AdminLogin@4566e5bd]" name="setDriver" is-config="true" duration-ms="3171" started-at="2019-01-04T11:36:46Z" finished-at="2019-01-04T11:36:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.AdminLogin@4566e5bd]" name="setUp" is-config="true" duration-ms="785" started-at="2019-01-04T11:36:49Z" finished-at="2019-01-04T11:36:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="adminLogin()[pri:0, instance:com.training.sanity.tests.AdminLogin@4566e5bd]" name="adminLogin" duration-ms="6042" started-at="2019-01-04T11:36:50Z" finished-at="2019-01-04T11:36:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLogin -->
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.training.sanity.tests.AdminLogin@4566e5bd]" name="tearDown" is-config="true" duration-ms="20023" started-at="2019-01-04T11:38:36Z" finished-at="2019-01-04T11:38:56Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: cyclosUsername (tried for 20 second(s) with 500 MILLISECONDS interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: cyclosUsername (tried for 20 second(s) with 500 MILLISECONDS interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.training.sanity.tests.AdminLogin.tearDown(AdminLogin.java:78)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.afterRun(TestRunner.java:725)
+at org.testng.TestRunner.run(TestRunner.java:509)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: cyclosUsername
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-5SL4C2D', ip: '9.102.60.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)
+at java.util.Optional.orElseThrow(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.sanity.tests.AdminLogin -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_050">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_050@5649fd9b]" name="setUp" is-config="true" duration-ms="3" started-at="2019-01-04T11:38:16Z" finished-at="2019-01-04T11:38:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testCase_ID_CYTC_050()[pri:0, instance:com.training.sanity.tests.TestCaseID_CYTC_050@5649fd9b]" name="testCase_ID_CYTC_050" duration-ms="20028" started-at="2019-01-04T11:38:16Z" finished-at="2019-01-04T11:38:36Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: #cyclosUsername
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-5SL4C2D', ip: '9.102.60.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\SATISHKALE\AppData\Local\Temp\rust_mozprofile.kFRPp3knLwm2, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, moz:headless=false, platform=WINDOWS, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=true, browserVersion=64.0, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=21440, browserName=firefox, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: fd818dc7-5825-487d-9242-e5815da4350e
+*** Element info: {Using=id, value=cyclosUsername}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #cyclosUsername
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-5SL4C2D', ip: '9.102.60.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\SATISHKALE\AppData\Local\Temp\rust_mozprofile.kFRPp3knLwm2, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, moz:headless=false, platform=WINDOWS, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=true, browserVersion=64.0, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=21440, browserName=firefox, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: fd818dc7-5825-487d-9242-e5815da4350e
+*** Element info: {Using=id, value=cyclosUsername}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
+at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.clear(Unknown Source)
+at com.training.pom.LoginPOM.sendUserName(LoginPOM.java:33)
+at com.training.pom.MemberHomePagePOM.memberLogin(MemberHomePagePOM.java:75)
+at com.training.sanity.tests.TestCaseID_CYTC_050.testCase_ID_CYTC_050(TestCaseID_CYTC_050.java:66)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase_ID_CYTC_050 -->
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_050 -->
+    </test> <!-- Firefox Test -->
   </suite> <!-- Cyclos Project_Sanity Test Suite -->
 </testng-results>

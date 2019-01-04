@@ -1,10 +1,7 @@
 package com.training.pom;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.List;
-import java.util.Properties;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -12,26 +9,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.training.generics.ScreenShot;
 
 public class MessagesPagePOM {
 
 	private WebDriver driver;
-	private static Properties properties;
 	private ScreenShot screenShot;
 	private Select messageBox_ListBox, type_ListBox, sendTo_ListBox;
 	private Alert alertDialog;
 	private List<WebElement> emails;
-	
+		
 	public MessagesPagePOM(WebDriver driver) throws IOException {
-		this.driver = driver;
+		this.driver = BaseClass.driver;
 		PageFactory.initElements(driver, this);
 		screenShot = new ScreenShot(driver);
-		properties = new Properties();
-		FileInputStream inStream = new FileInputStream("./resources/others.properties");
-		properties.load(inStream);
 	}
 
 	@FindBy(id = "modeButton")
@@ -85,7 +80,7 @@ public class MessagesPagePOM {
 	// Click Advanced button on Messages page
 	public void clickAdvancedBtn() throws InterruptedException {
 		this.advancedBtn.click();
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
@@ -109,10 +104,9 @@ public class MessagesPagePOM {
 	}
 
 	// Select value in Message box list box
-	public void selectMessageListBx(String messgType) throws InterruptedException {
+	public void selectMessageListBx(String messgType) {
 		messageBox_ListBox = new Select(messgBoxListBx);
 		messageBox_ListBox.selectByVisibleText(messgType);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
@@ -122,10 +116,10 @@ public class MessagesPagePOM {
 	}
 
 	// Select value in Message box list box
-	public void selectTypeListBx(String type) throws InterruptedException {
+	public void selectTypeListBx(String type) {
 		type_ListBox = new Select(typeListBx);
 		type_ListBox.selectByVisibleText(type);
-		// Thread.sleep(1000); screenShot.captureScreenShot();
+		screenShot.captureScreenShot();
 	}
 
 	// Get selected value from Type list box
@@ -134,9 +128,8 @@ public class MessagesPagePOM {
 	}
 
 	// Click Submit button
-	public void clickSubmitBtn() throws InterruptedException {
+	public void clickSubmitBtn() {
 		this.submitBtn.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
@@ -147,17 +140,15 @@ public class MessagesPagePOM {
 	}
 
 	// Click Submit button for new message
-	public void clickSubmitBtnForNewMessg() throws InterruptedException {
+	public void clickSubmitBtnForNewMessg() {
 		this.submitBtnForNewMesg.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
 	// Select value in Send to list box
-	public void selectSendToListBx(String value) throws InterruptedException {
+	public void selectSendToListBx(String value) {
 		sendTo_ListBox = new Select(sendToListBx);
 		sendTo_ListBox.selectByVisibleText(value);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
@@ -167,16 +158,14 @@ public class MessagesPagePOM {
 	}
 
 	// Enter member login credentials
-	public void enterMemberLogin(String memberLogin) throws InterruptedException {
+	public void enterMemberLogin(String memberLogin) {
 		this.memberLoginTxtBx.clear();
 		this.memberLoginTxtBx.sendKeys(memberLogin);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	// Press enter key after entering member login
-	public void pressEnterKey() throws InterruptedException {
-		Thread.sleep(1000);
+	public void pressEnterKey() {
 		this.memberLoginTxtBx.sendKeys(Keys.ENTER);
 	}
 
@@ -186,9 +175,8 @@ public class MessagesPagePOM {
 	}
 	
 	// Enter subject in the 'Subject' text box
-	public void enterSubject(String subject) throws InterruptedException {
+	public void enterSubject(String subject) {
 		this.subjectTxtBx.sendKeys(subject);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
@@ -198,11 +186,11 @@ public class MessagesPagePOM {
 	}
 
 	// Enter message in the body
-	public void enterMesgInBody(String messg) throws InterruptedException {
-		this.messgBody.clear();
+	public void enterMesgInBody(String messg) {
+		//this.messgBody.clear();
 		this.messgBody.sendKeys(messg);
 		// WebElement test = driver.findElement(By.className("CSS1Compat"));
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
@@ -223,9 +211,8 @@ public class MessagesPagePOM {
 	}
 
 	// Click Submit button to send new message
-	public void clickSubmitBtnToSendMesg() throws InterruptedException {
+	public void clickSubmitBtnToSendMesg() {
 		this.submitBtn.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
@@ -236,14 +223,13 @@ public class MessagesPagePOM {
 	}
 	
 	// Click OK in the pop up window
-	public void clickOKInPopup() throws InterruptedException {
+	public void clickOKInPopup() {
 		alertDialog.accept();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	// Click on unread email with subject 'hello' to view message which user1 has sent
-	public void clickOnEmail() throws InterruptedException{
+	public void clickOnEmail() {
 		emails = driver.findElements(By.xpath("//tr/td[@class='unreadMessage']/a[@class='linkList messageDetails']"));
 				
 		for(WebElement emailSubject : emails){
@@ -253,7 +239,6 @@ public class MessagesPagePOM {
 		    	break;
 		    }
 	    }
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	

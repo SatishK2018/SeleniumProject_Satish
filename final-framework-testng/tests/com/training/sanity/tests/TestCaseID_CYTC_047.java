@@ -7,42 +7,43 @@
 package com.training.sanity.tests;
 
 import static org.testng.Assert.assertEquals;
-
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import com.training.pom.BaseClass;
 import com.training.pom.MemberHomePagePOM;
 import com.training.pom.MemberPaymentPagePOM;
-import com.training.utility.DriverFactory;
-import com.training.utility.DriverNames;
 
 public class TestCaseID_CYTC_047 {
 
 	private WebDriver driver;
-	private String baseUrl;
+	private Properties properties;
 	private MemberHomePagePOM memberHomePgPOM;
 	private MemberPaymentPagePOM memberPayPgPOM;
-	private static Properties properties;
 	private String actualResult, expectedResult;
 	private String memberUser, memberPassword;
 
+	/******
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
 	}
+	******/
 
 	@BeforeMethod
 	public void setUp() throws InterruptedException, IOException {
-		driver = DriverFactory.getDriver(DriverNames.CHROME);
+		this.driver = BaseClass.driver;
+		this.properties = BaseClass.properties;
 		memberHomePgPOM = new MemberHomePagePOM(driver);
 		memberPayPgPOM = new MemberPaymentPagePOM(driver);
+		memberUser = properties.getProperty("member_User1");
+		memberPassword = properties.getProperty("member_Password1");
+		
+		/******
 		baseUrl = properties.getProperty("baseURL");
 		memberUser = properties.getProperty("member_User1");
 		memberPassword = properties.getProperty("member_Password1");
@@ -51,11 +52,14 @@ public class TestCaseID_CYTC_047 {
 		Thread.sleep(1000);
 		// Pre-Condition
 		memberHomePgPOM.memberLogin(memberUser, memberPassword);
+		******/
 	}
 
 	@Test
 	public void testCase_ID_CYTC_047() throws InterruptedException {
 
+		//Login to Member
+		memberHomePgPOM.memberLogin(memberUser, memberPassword);
 		// Step 1: Click on Account tab
 		memberHomePgPOM.clickAccountTab();
 		// Verify that the 'Account Information' sub menu is displayed
@@ -79,6 +83,7 @@ public class TestCaseID_CYTC_047 {
 		
 		//Step 3: Enter valid credentials in Login text box
 		memberPayPgPOM.enterNameInLoginTxtBx("Selenium");
+		Thread.sleep(1000);
 		memberPayPgPOM.pressEnterKey();
 		actualResult = memberPayPgPOM.getEnteredName();
 		expectedResult = properties.getProperty("MemberPayment_Login");
@@ -129,10 +134,4 @@ public class TestCaseID_CYTC_047 {
 		memberHomePgPOM.clickOKInPopup();
 	}
 	
-	@AfterTest 
-	public void tearDown() throws Exception { 
-		Thread.sleep(1000);
-	    driver.quit(); 
-	}
-
 }

@@ -1,8 +1,6 @@
 package com.training.pom;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -16,19 +14,15 @@ import com.training.generics.ScreenShot;
 public class ContactsPagePOM {
 
 	private WebDriver driver;
-	private static Properties properties;
 	private ScreenShot screenShot;
 	private Alert alert;
 	private String xpath;
 	private WebElement dynamicXpath;
 	
 	public ContactsPagePOM(WebDriver driver) throws IOException {
-		this.driver = driver;
+		this.driver = BaseClass.driver;
 		PageFactory.initElements(driver, this);
 		screenShot = new ScreenShot(driver);
-		properties = new Properties();
-		FileInputStream inStream = new FileInputStream("./resources/others.properties");
-		properties.load(inStream);
 	}
 
 	@FindBy(xpath = "//INPUT[@type='submit']")
@@ -64,9 +58,8 @@ public class ContactsPagePOM {
 	}
 	
 	// Click 'Make Payment' submit button
-	public void clickMakePaymentSubmitBtn() throws InterruptedException {
+	public void clickMakePaymentSubmitBtn() {
 		this.makePaymentsubmitBtn.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 		
 	}
@@ -74,7 +67,6 @@ public class ContactsPagePOM {
 	// Click Submit button
 	public void clickSubmitBtn() throws InterruptedException {
 		this.submitBtn.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
@@ -91,16 +83,14 @@ public class ContactsPagePOM {
 	}
 	
 	// Enter member login credentials
-	public void enterMemberLogin(String memberLogin) throws InterruptedException {
+	public void enterMemberLogin(String memberLogin) {
 		this.memberLoginTxtBx.clear();
 		this.memberLoginTxtBx.sendKeys(memberLogin);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
 	// Press enter key after entering member login
-	public void pressEnterKey() throws InterruptedException {
-		Thread.sleep(1000);
+	public void pressEnterKey() {
 		this.memberLoginTxtBx.sendKeys(Keys.ENTER);
 	}
 
@@ -116,9 +106,8 @@ public class ContactsPagePOM {
 	}
 	
 	// Click on the added contact
-	public void clickOnAddedContact() throws InterruptedException {
+	public void clickOnAddedContact() {
 		this.dynamicXpath.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	

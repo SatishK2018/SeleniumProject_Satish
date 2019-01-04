@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Cyclos Project_Sanity Test Suite" parallel="none" thread-count="2">
+   <test name = "Chrome Test" >
+   <parameter name="browser" value="Chrome"/>
+      <classes> 
+      	 <class name = "com.training.sanity.tests.AdminLogin"/>
+     	 <class name = "com.training.sanity.tests.TestCaseID_CYTC_016"/>  
+      	 <class name = "com.training.sanity.tests.TestCaseID_CYTC_017"/>
+      	 <class name = "com.training.sanity.tests.TestCaseID_CYTC_018"/>
+      	 <class name = "com.training.sanity.tests.TestCaseID_CYTC_019"/>
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_020"/>
+         <class name = "com.training.sanity.tests.AdminLogout"/> 
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_046"/>
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_047"/>
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_048"/>
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_049"/>
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_050"/>  
+      </classes>
+   </test>
+  <test name = "Firefox Test">
+   <parameter name="browser" value="Firefox"/>
+      <classes>
+      	 <class name = "com.training.sanity.tests.AdminLogin"/>
+     	 <class name = "com.training.sanity.tests.TestCaseID_CYTC_016"/>  
+    	 <class name = "com.training.sanity.tests.TestCaseID_CYTC_017"/>
+      	 <class name = "com.training.sanity.tests.TestCaseID_CYTC_018"/>
+      	 <class name = "com.training.sanity.tests.TestCaseID_CYTC_019"/>
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_020"/>
+         <class name = "com.training.sanity.tests.AdminLogout"/> 
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_046"/>
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_047"/>
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_048"/>
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_049"/>
+         <class name = "com.training.sanity.tests.TestCaseID_CYTC_050"/>    
+     </classes>
+   </test>  
+ </suite>	

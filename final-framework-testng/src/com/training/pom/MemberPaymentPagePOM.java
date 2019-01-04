@@ -1,9 +1,6 @@
 package com.training.pom;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,17 +13,13 @@ import com.training.generics.ScreenShot;
 public class MemberPaymentPagePOM {
 
 	private WebDriver driver;
-	private static Properties properties;
 	private ScreenShot screenShot;
 	private Select schedule_Type_ListBox;
 
 	public MemberPaymentPagePOM(WebDriver driver) throws IOException {
-		this.driver = driver;
+		this.driver = BaseClass.driver;
 		PageFactory.initElements(driver, this);
 		screenShot = new ScreenShot(driver);
-		properties = new Properties();
-		FileInputStream inStream = new FileInputStream("./resources/others.properties");
-		properties.load(inStream);
 	}
 
 	@FindBy(id = "memberUsername")
@@ -64,10 +57,9 @@ public class MemberPaymentPagePOM {
 	
 	
 	//Enter name in the Login(recipient) text box
-	public void enterNameInLoginTxtBx(String name) throws InterruptedException {
+	public void enterNameInLoginTxtBx(String name) {
 		this.loginTxtBx.clear();
 		this.loginTxtBx.sendKeys(name);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
@@ -77,10 +69,9 @@ public class MemberPaymentPagePOM {
 	}
 
 	//Enter amount in the Amount text box
-	public void enterAmount(String amount) throws InterruptedException {
+	public void enterAmount(String amount) {
 		this.amountTxtBx.clear();
 		this.amountTxtBx.sendKeys(amount);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
@@ -90,10 +81,9 @@ public class MemberPaymentPagePOM {
 	}
 
 	//Select scheduling type from Scheduling List box
-	public void selectSchedulingType(String scheduleType) throws InterruptedException {
+	public void selectSchedulingType(String scheduleType) {
 		schedule_Type_ListBox = new Select(schedulingListBx);
 		schedule_Type_ListBox.selectByVisibleText(scheduleType);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
@@ -103,12 +93,11 @@ public class MemberPaymentPagePOM {
 	}
 
 	//Select date from the calendar
-	public void selectScheduledDate() throws InterruptedException {
+	public void selectScheduledDate() {
 		//this.scheduledDate.sendKeys(scheduledDate);
 		this.scheduledDate.click();
 		this.nextCalendarMonth.click();
 		this.selectDate.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
@@ -118,10 +107,9 @@ public class MemberPaymentPagePOM {
 	}
 	
 	//Enter description in the Description text box
-	public void enterDescription(String description) throws InterruptedException {
+	public void enterDescription(String description) {
 		this.descriptTxtBx.clear();
 		this.descriptTxtBx.sendKeys(description);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
@@ -131,9 +119,8 @@ public class MemberPaymentPagePOM {
 	}
 	
 	//Click Submit button
-	public void clickSubmitBtn1() throws InterruptedException {
+	public void clickSubmitBtn1() {
 		this.submitBtn1.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 	
@@ -143,9 +130,8 @@ public class MemberPaymentPagePOM {
 	}
 	
 	//Click Submit button
-	public void clickSubmitBtn2() throws InterruptedException {
+	public void clickSubmitBtn2() {
 		this.submitBtn2.click();
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
 
@@ -155,12 +141,10 @@ public class MemberPaymentPagePOM {
 	}
 	
 	// Press enter key after entering member login
-	public void pressEnterKey() throws InterruptedException {
+	public void pressEnterKey() {
 		this.loginTxtBx.sendKeys(Keys.ENTER);
-		Thread.sleep(1000);
 		screenShot.captureScreenShot();
 	}
-	
 	
 
 }

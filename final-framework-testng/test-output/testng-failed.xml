@@ -1,16 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Cyclos Project_Sanity Test Suite]">
+  <test thread-count="2" name="Chrome Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_016">
+        <methods>
+          <include name="testCase_ID_CYTC_016"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_016 -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test thread-count="2" name="Firefox Test(failed)">
+    <parameter name="browser" value="Firefox"/>
     <classes>
       <class name="com.training.sanity.tests.TestCaseID_CYTC_049">
         <methods>
-          <include name="setUpBeforeClass"/>
-          <include name="tearDown"/>
           <include name="testCase_ID_CYTC_049"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_049 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_016">
+        <methods>
+          <include name="testCase_ID_CYTC_016"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_016 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_048">
+        <methods>
+          <include name="testCase_ID_CYTC_048"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_048 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_047">
+        <methods>
+          <include name="testCase_ID_CYTC_047"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_047 -->
+      <class name="com.training.sanity.tests.TestCaseID_CYTC_050">
+        <methods>
+          <include name="setUp"/>
+          <include name="testCase_ID_CYTC_050"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.TestCaseID_CYTC_050 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Cyclos Project_Sanity Test Suite] -->

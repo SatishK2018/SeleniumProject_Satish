@@ -7,60 +7,70 @@
 package com.training.sanity.tests;
 
 import static org.testng.Assert.assertEquals;
-
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import com.training.pom.BaseClass;
 import com.training.pom.LoginPOM;
 import com.training.pom.MemberHomePagePOM;
 import com.training.pom.MessagesPagePOM;
-import com.training.utility.DriverFactory;
-import com.training.utility.DriverNames;
 
 public class TestCaseID_CYTC_049 {
 
 	private WebDriver driver;
-	private String baseUrl;
+	private Properties properties;
 	private LoginPOM loginPOM;
 	private MemberHomePagePOM memberHomePgPOM;
 	private MessagesPagePOM messgPgPOM;
-	private static Properties properties;
 	private String actualResult, expectedResult;
 	private String memberUser1, memberPassword1, memberUser2, memberPassword2;
-
+	
+	/*****
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
 	}
-
+	*****/
+	
 	@BeforeMethod
 	public void setUp() throws InterruptedException, IOException {
-		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginPOM(driver);
+		this.driver = BaseClass.driver;
+		this.properties = BaseClass.properties;
 		memberHomePgPOM = new MemberHomePagePOM(driver);
 		messgPgPOM = new MessagesPagePOM(driver);
-		baseUrl = properties.getProperty("baseURL");
+		loginPOM = new LoginPOM(driver);
 		memberUser1 = properties.getProperty("member_User1");
 		memberPassword1 = properties.getProperty("member_Password1");
 		memberUser2 = properties.getProperty("member_User2");
 		memberPassword2 = properties.getProperty("member_Password2");
+						
+		/*****
+		driver = DriverFactory.getDriver(DriverNames.CHROME);
+		baseUrl = properties.getProperty("baseURL");
+		loginPOM = new LoginPOM(driver);
 		// open the browser
 		driver.get(baseUrl);
 		Thread.sleep(1000);
 		// Pre-Condition
 		memberHomePgPOM.memberLogin(memberUser1, memberPassword1);
+		*****/
 	}
 
 	@Test
 	public void testCase_ID_CYTC_049() throws InterruptedException {
 
+		// Login to the application
+		memberHomePgPOM.memberLogin(memberUser1, memberPassword1);
 		// Step 1: Click on Personal Tab
 		memberHomePgPOM.clickPersonalTab();
 		// Verify that the 'Profile' sub menu is displayed
@@ -92,6 +102,7 @@ public class TestCaseID_CYTC_049 {
 
 		// Step 5: Enter valid credential in Member login text box
 		messgPgPOM.enterMemberLogin("selenium");
+		Thread.sleep(1000);
 		messgPgPOM.pressEnterKey();
 		actualResult = messgPgPOM.getMemberLogin();
 		expectedResult = properties.getProperty("SendMessage_MemberLogin");
@@ -184,11 +195,5 @@ public class TestCaseID_CYTC_049 {
 		memberHomePgPOM.clickOKInPopup();
 	
 	}
-
-	@AfterTest public void tearDown() throws Exception { 
-	  Thread.sleep(1000);
-	  driver.quit(); 
-	 }
-	 
 
 }

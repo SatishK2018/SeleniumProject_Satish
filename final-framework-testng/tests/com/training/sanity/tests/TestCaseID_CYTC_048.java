@@ -7,56 +7,59 @@
 package com.training.sanity.tests;
 
 import static org.testng.Assert.assertEquals;
-
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import com.training.pom.BaseClass;
 import com.training.pom.MemberHomePagePOM;
 import com.training.pom.MessagesPagePOM;
-import com.training.utility.DriverFactory;
-import com.training.utility.DriverNames;
 
 public class TestCaseID_CYTC_048 {
 
 	private WebDriver driver;
-	private String baseUrl;
+	private Properties properties;
 	private MemberHomePagePOM memberHomePgPOM;
 	private MessagesPagePOM messgPgPOM;
-	private static Properties properties;
 	private String actualResult, expectedResult;
 	private boolean actual_Result, expected_Result;
 	private String memberUser, memberPassword;
 
+	/******
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
 	}
+	******/
 
 	@BeforeMethod
 	public void setUp() throws InterruptedException, IOException {
-		driver = DriverFactory.getDriver(DriverNames.CHROME);
+		this.driver = BaseClass.driver;
+		this.properties = BaseClass.properties;
 		memberHomePgPOM = new MemberHomePagePOM(driver);
 		messgPgPOM = new MessagesPagePOM(driver);
-		baseUrl = properties.getProperty("baseURL");
 		memberUser = properties.getProperty("member_User1");
 		memberPassword = properties.getProperty("member_Password1");
+		
+		/*****
+		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		// open the browser
 		driver.get(baseUrl);
 		Thread.sleep(1000);
 		// Pre-Condition
 		memberHomePgPOM.memberLogin(memberUser, memberPassword);
+		*****/
 	}
 
 	@Test
 	public void testCase_ID_CYTC_048() throws InterruptedException {
-
+		
+		// Login to the application
+		memberHomePgPOM.memberLogin(memberUser, memberPassword);
+		
 		// Step 1: Click on Personal Tab
 		memberHomePgPOM.clickPersonalTab();
 		// Verify that the 'Profile' sub menu is displayed
@@ -151,11 +154,5 @@ public class TestCaseID_CYTC_048 {
 		memberHomePgPOM.clickOKInPopup();
 
 	}
-
-	@AfterTest
-	public void tearDown() throws Exception {
-		Thread.sleep(1000);
-		driver.quit();
-	}
-
+	
 }
