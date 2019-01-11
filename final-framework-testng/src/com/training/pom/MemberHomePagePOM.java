@@ -37,6 +37,9 @@ public class MemberHomePagePOM {
 
 	@FindBy(xpath = "//SPAN[@class='subMenuText'][text()='Member Payment']")
 	private WebElement accountSubMenu_MemberPayment;
+	
+	@FindBy(xpath = "//SPAN[@class='subMenuText'][text()='Loans']")
+	private WebElement accountSubMenu_Loans;
 
 	@FindBy(xpath = "//SPAN[@class='menuText'][text()='Personal']")
 	private WebElement personalMenu;
@@ -55,6 +58,9 @@ public class MemberHomePagePOM {
 
 	@FindBy(xpath = "(//INPUT[@type='button'])[21]")
 	private WebElement submitBtn_View_Loan;
+	
+	@FindBy (xpath = "//SPAN[@class='subMenuText'][text()='Member Payment']")
+	private WebElement memberPaymentLink;
 	
 	@FindBy(id = "modeButton")
 	private WebElement advancedBtn;
@@ -102,7 +108,7 @@ public class MemberHomePagePOM {
 		screenShot.captureScreenShot();
 	}
 
-	// Click on Account tab
+	// Click on Personal tab
 	public void clickPersonalTab() {
 		this.personalMenu.click();
 		screenShot.captureScreenShot();
@@ -147,6 +153,12 @@ public class MemberHomePagePOM {
 		this.accountSubMenu_AccountInformation.click();
 		screenShot.captureScreenShot();
 	}
+	
+	// Click on Loans sub menu
+	public void clickLoansMenu() {
+		this.accountSubMenu_Loans.click();
+		screenShot.captureScreenShot();
+	}
 
 	// Click on Messages sub menu
 	public void clickMessagesLink() {
@@ -175,6 +187,15 @@ public class MemberHomePagePOM {
 	public void clickAdvancedBtn() {
 		this.advancedBtn.click();
 		screenShot.captureScreenShot();
+	}
+	
+	//Verify Member Payment option is present
+	public boolean isMemberPaymentClickable() {
+		if(memberPaymentLink.isDisplayed())
+			return true;
+		else
+			return false;
+		
 	}
 
 }

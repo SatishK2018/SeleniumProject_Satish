@@ -17,7 +17,7 @@ public class MemberPaymentPagePOM {
 	private Select schedule_Type_ListBox;
 
 	public MemberPaymentPagePOM(WebDriver driver) throws IOException {
-		this.driver = BaseClass.driver;
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		screenShot = new ScreenShot(driver);
 	}

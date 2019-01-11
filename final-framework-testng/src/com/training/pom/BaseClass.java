@@ -10,7 +10,7 @@ import com.training.utility.DriverNames;
 
 public class BaseClass {
 
-	public static WebDriver driver,driver1,driver2;
+	public static WebDriver driver;
 	public static Properties properties;
 	public static String baseUrl;
 	

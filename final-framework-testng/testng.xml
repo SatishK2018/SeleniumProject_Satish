@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name = "Cyclos Project_Sanity Test Suite" thread-count="2">
-   <test name = "Sanity Test">
+<suite name = "Cyclos Project Test Suite" thread-count="2">
+  <!--  <test name = "Sanity Test">
    <parameter name="browser" value="Firefox"/>
       <classes> 
-         <class name = "com.training.sanity.tests.AdminLogin"/>
+         <class name = "com.training.sanity.tests.LoginToApplication"/>
       	 <class name = "com.training.sanity.tests.TestCaseID_CYTC_016"/> 
       	 <class name = "com.training.sanity.tests.TestCaseID_CYTC_017"/> 
       	 <class name = "com.training.sanity.tests.TestCaseID_CYTC_018"/>
@@ -18,5 +18,16 @@
          <class name = "com.training.sanity.tests.TestCaseID_CYTC_049"/>
          <class name = "com.training.sanity.tests.TestCaseID_CYTC_050"/>
       </classes>
+   </test> -->
+   <test name = "Regression Test">
+   <parameter name="browser" value="Chrome"/>
+      <classes> 
+         <class name = "com.training.sanity.tests.LoginToApplication"/>
+      	 <class name = "com.training.regression.tests.TestCaseID_CYTC_076"/> 
+      	 <class name = "com.training.regression.tests.TestCaseID_CYTC_077"/> 
+      	 <class name = "com.training.regression.tests.TestCaseID_CYTC_078"/>
+      	 <class name = "com.training.regression.tests.TestCaseID_CYTC_079"/>
+         <class name = "com.training.regression.tests.TestCaseID_CYTC_080"/>
+      </classes>
    </test>
-  </suite>	
+ </suite>	

@@ -12,17 +12,20 @@ public class GrantLoanPagePOM {
 	
 	private WebDriver driver; 
 	private ScreenShot screenShot;
-	private Alert alertDialog;
+	//private Alert alertDialog;
 	private String alertMessg;
 	
 	public GrantLoanPagePOM(WebDriver driver) throws IOException {
-		this.driver = BaseClass.driver;
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		screenShot = new ScreenShot(driver);
 	}
 	
 	@FindBy(id="amount")
 	private WebElement amount; 
+	
+	@FindBy (name="member(name)")
+	private WebElement memberFullName;
 	
 	@FindBy(id="description")
 	private WebElement descriptionTxtBox;
@@ -66,8 +69,9 @@ public class GrantLoanPagePOM {
 	
 	//Click OK in popup
 	public void clickOkInAlert() {
-		alertDialog = driver.switchTo().alert();
-		alertDialog.accept();
+		/*alertDialog = driver.switchTo().alert();
+		alertDialog.accept();*/
+		driver.switchTo().alert().accept();
 		screenShot.captureScreenShot();
 	}
 	
@@ -90,6 +94,11 @@ public class GrantLoanPagePOM {
 	public String getAlertMessg() {
 		alertMessg = driver.switchTo().alert().getText();
 		return alertMessg;		
+	}
+	
+	//Get Member full Name
+	public String getMemberFullName() {
+		return memberFullName.getAttribute("value");
 	}
 		
 }

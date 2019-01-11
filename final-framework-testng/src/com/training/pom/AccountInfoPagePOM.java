@@ -33,6 +33,9 @@ public class AccountInfoPagePOM {
 	@FindBy (id = "memberName")
 	private WebElement memberName;
 	
+	@FindBy(name = "member(user).username")
+	private WebElement displayedMemberLogin;
+	
 	@FindBy(xpath="//INPUT[@type='submit']")
 	private WebElement search;	
 	
@@ -193,6 +196,11 @@ public class AccountInfoPagePOM {
 		this.toDateTxtBx.sendKeys(Keys.DELETE);
 		this.fromDateTxtBx.sendKeys(Keys.CONTROL, "a");
 		this.fromDateTxtBx.sendKeys(Keys.DELETE);
+	}
+	
+	// Get displayed Member Login name in the profile
+	public String getDisplayedMemberLogin() {
+		return this.displayedMemberLogin.getAttribute("value");
 	}
 	
 		

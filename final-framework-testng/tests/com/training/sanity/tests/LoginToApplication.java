@@ -16,7 +16,7 @@ import com.training.generics.ScreenShot;
 import com.training.pom.BaseClass;
 import com.training.pom.LoginPOM;
 
-public class AdminLogin extends BaseClass {
+public class LoginToApplication extends BaseClass {
 	
 	private WebDriver driver;
 	private String baseUrl;

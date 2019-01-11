@@ -25,12 +25,14 @@ public class LoginExcelTest {
 	private LoginPOM loginPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
+	private LoginDataProviders login;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
+		
 	}
 
 	@BeforeMethod
@@ -41,6 +43,7 @@ public class LoginExcelTest {
 		screenShot = new ScreenShot(driver);
 		// open the browser
 		driver.get(baseUrl);
+		Thread.sleep(2000);
 	}
 
 	@AfterMethod
@@ -54,7 +57,7 @@ public class LoginExcelTest {
 		loginPOM.sendUserName(userName);
 		loginPOM.sendPassword(password);
 		loginPOM.clickLoginBtn();
-		screenShot.captureScreenShot(userName);
+		screenShot.captureScreenShot();
 
 	}
 

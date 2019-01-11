@@ -10,7 +10,7 @@ import com.training.readexcel.ApachePOIExcelRead;
 
 public class LoginDataProviders {
 
-	@DataProvider(name = "db-inputs")
+	/*@DataProvider(name = "db-inputs")
 	public Object [][] getDBData() {
 
 		List<LoginBean> list = new ELearningDAO().getLogins(); 
@@ -24,14 +24,12 @@ public class LoginDataProviders {
 			
 			result[count ++] = obj; 
 		}
-		
-		
-		return result;
-	}
+			return result;
+	}*/
 	
 	@DataProvider(name = "excel-inputs")
-	public Object[][] getExcelData(){
-		String fileName = "C:/Users/Naveen/Desktop/Testing.xlsx";
+	public static Object[][] getExcelData(){
+		String fileName = "C:\\Users\\SATISHKALE\\Downloads\\IBM\\Upskill Program - Selenium\\Cyclos Project\\Testing.xlsx";
 
 		List<List<Object>> retVal = ApachePOIExcelRead.getExcelContent(fileName);
 		System.out.println("size " + retVal.size());
@@ -45,15 +43,24 @@ public class LoginDataProviders {
 			System.out.println(temp.get(0));
 			System.out.println(temp.get(1));
 
-//			obj[0] = temp.get(0); 
-//			obj[1] = temp.get(1); 
+			obj[0] = temp.get(0); 
+			obj[1] = temp.get(1); 
 			
 			result[count ++] = obj; 
 			}
+			
 		}
 		
 		return result; 
 	}
+	
+	/*@DataProvider(name="excel-inputs")
+    public Object[][] getExcelData(){
+        return new Object[][] {
+            { "admin", "1234" },
+            { "admin", "8234" }
+        };  
+}*/
 	
 	
 }

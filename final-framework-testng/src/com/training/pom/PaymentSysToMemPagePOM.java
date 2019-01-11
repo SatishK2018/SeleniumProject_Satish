@@ -15,7 +15,7 @@ public class PaymentSysToMemPagePOM {
 	private Select transType; 
 	
 	public PaymentSysToMemPagePOM(WebDriver driver) throws IOException {
-		this.driver = BaseClass.driver;
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		screenShot = new ScreenShot(driver);
 	}

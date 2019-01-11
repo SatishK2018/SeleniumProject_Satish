@@ -25,6 +25,9 @@ public class AdminHomePagePOM {
 	@FindBy(id="memberUsername")
 	private WebElement member; 
 	
+	/*@FindBy (xpath="//*[@id=\"memberUsername\"]")
+	private WebElement member;*/
+	
 	@FindBy(xpath="(//INPUT[@type='button'])[7]")
 	private WebElement submitBtn_Account_Information;
 	
